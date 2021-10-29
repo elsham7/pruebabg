@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "baf6wHYpOUu/2dWgDJ9q8P1T/Ahniuwg60wGs4Q7AnQoFqfwP6UYdJE2S9u0/uk+5F7YKzfEUabAhViQ8V4pWg==",
+  "success": true,
+  "projectFilePath": "E:\\Fuentes\\PruebaSamuelAlcivar\\Modelo\\Modelo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alfer\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

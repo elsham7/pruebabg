@@ -1,0 +1,13 @@
+E:\Fuentes\PruebaSamuelAlcivar\ModeloVista\bin\Debug\netstandard2.1\ModeloVista.deps.json
+E:\Fuentes\PruebaSamuelAlcivar\ModeloVista\bin\Debug\netstandard2.1\ModeloVista.dll
+E:\Fuentes\PruebaSamuelAlcivar\ModeloVista\bin\Debug\netstandard2.1\ModeloVista.pdb
+E:\Fuentes\PruebaSamuelAlcivar\ModeloVista\bin\Debug\netstandard2.1\Utilities.dll
+E:\Fuentes\PruebaSamuelAlcivar\ModeloVista\bin\Debug\netstandard2.1\Utilities.pdb
+E:\Fuentes\PruebaSamuelAlcivar\ModeloVista\obj\Debug\netstandard2.1\ModeloVista.csproj.AssemblyReference.cache
+E:\Fuentes\PruebaSamuelAlcivar\ModeloVista\obj\Debug\netstandard2.1\ModeloVista.GeneratedMSBuildEditorConfig.editorconfig
+E:\Fuentes\PruebaSamuelAlcivar\ModeloVista\obj\Debug\netstandard2.1\ModeloVista.AssemblyInfoInputs.cache
+E:\Fuentes\PruebaSamuelAlcivar\ModeloVista\obj\Debug\netstandard2.1\ModeloVista.AssemblyInfo.cs
+E:\Fuentes\PruebaSamuelAlcivar\ModeloVista\obj\Debug\netstandard2.1\ModeloVista.csproj.CoreCompileInputs.cache
+E:\Fuentes\PruebaSamuelAlcivar\ModeloVista\obj\Debug\netstandard2.1\ModeloVista.csproj.CopyComplete
+E:\Fuentes\PruebaSamuelAlcivar\ModeloVista\obj\Debug\netstandard2.1\ModeloVista.dll
+E:\Fuentes\PruebaSamuelAlcivar\ModeloVista\obj\Debug\netstandard2.1\ModeloVista.pdb
