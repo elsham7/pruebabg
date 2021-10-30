@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "0k283+9Ytm211tDxZGrjZu1FNVczrfPhwZ1q5rDgMoFTdUJQOasVvppE87usEj7MDUHyQALeEx7O1La5a2NGsA==",
+  "success": true,
+  "projectFilePath": "C:\\Prueba\\BE\\Modelos\\SismedicViewModel\\SismedicViewModel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vmt_samuel_alcivar\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\vmt_samuel_alcivar\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\vmt_samuel_alcivar\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\vmt_samuel_alcivar\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\vmt_samuel_alcivar\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\vmt_samuel_alcivar\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\vmt_samuel_alcivar\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

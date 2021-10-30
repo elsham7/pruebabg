@@ -1,0 +1,14 @@
+C:\DevOps\ERP-DESA\Sismedic\Modelos\SismedicViewModel\bin\Debug\netstandard2.1\SismedicViewModel.deps.json
+C:\DevOps\ERP-DESA\Sismedic\Modelos\SismedicViewModel\bin\Debug\netstandard2.1\SismedicViewModel.dll
+C:\DevOps\ERP-DESA\Sismedic\Modelos\SismedicViewModel\bin\Debug\netstandard2.1\SismedicViewModel.pdb
+C:\DevOps\ERP-DESA\Sismedic\Modelos\SismedicViewModel\bin\Debug\netstandard2.1\SismedicModelo.dll
+C:\DevOps\ERP-DESA\Sismedic\Modelos\SismedicViewModel\bin\Debug\netstandard2.1\SismedicUtilities.dll
+C:\DevOps\ERP-DESA\Sismedic\Modelos\SismedicViewModel\bin\Debug\netstandard2.1\SismedicModelo.pdb
+C:\DevOps\ERP-DESA\Sismedic\Modelos\SismedicViewModel\bin\Debug\netstandard2.1\SismedicUtilities.pdb
+C:\DevOps\ERP-DESA\Sismedic\Modelos\SismedicViewModel\obj\Debug\netstandard2.1\SismedicViewModel.csprojAssemblyReference.cache
+C:\DevOps\ERP-DESA\Sismedic\Modelos\SismedicViewModel\obj\Debug\netstandard2.1\SismedicViewModel.AssemblyInfoInputs.cache
+C:\DevOps\ERP-DESA\Sismedic\Modelos\SismedicViewModel\obj\Debug\netstandard2.1\SismedicViewModel.AssemblyInfo.cs
+C:\DevOps\ERP-DESA\Sismedic\Modelos\SismedicViewModel\obj\Debug\netstandard2.1\SismedicViewModel.csproj.CoreCompileInputs.cache
+C:\DevOps\ERP-DESA\Sismedic\Modelos\SismedicViewModel\obj\Debug\netstandard2.1\SismedicViewModel.csproj.CopyComplete
+C:\DevOps\ERP-DESA\Sismedic\Modelos\SismedicViewModel\obj\Debug\netstandard2.1\SismedicViewModel.dll
+C:\DevOps\ERP-DESA\Sismedic\Modelos\SismedicViewModel\obj\Debug\netstandard2.1\SismedicViewModel.pdb

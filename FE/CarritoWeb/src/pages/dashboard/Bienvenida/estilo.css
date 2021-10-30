@@ -1,0 +1,31 @@
+.item{
+    margin-bottom: 40px;
+}
+
+.foto{
+    width: 150px;
+}
+
+.foto:hover{
+    transform: scale(1.25);
+}
+
+.descripcionProducto{
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+.detalleProducto{
+   text-align: justify;
+}
+
+.precio{
+    font-size: 18px;
+    font-weight: bold;
+    color: #01c0c8;
+}
+
+.anadir{
+    cursor: pointer;
+}

@@ -1,0 +1,517 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Fuentes\\bg\\Prueba\\BE\\Microservicios\\ApiSeguridad\\ApiSeguridad.csproj": {}
+  },
+  "projects": {
+    "E:\\Fuentes\\bg\\Prueba\\BE\\Logica\\LogicaDatos\\LogicaDatos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Fuentes\\bg\\Prueba\\BE\\Logica\\LogicaDatos\\LogicaDatos.csproj",
+        "projectName": "LogicaDatos",
+        "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Logica\\LogicaDatos\\LogicaDatos.csproj",
+        "packagesPath": "C:\\Users\\alfer\\.nuget\\packages\\",
+        "outputPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Logica\\LogicaDatos\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alfer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\Modelo\\Modelo.csproj": {
+                "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\Modelo\\Modelo.csproj"
+              },
+              "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\ViewModel\\ViewModel.csproj": {
+                "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\ViewModel\\ViewModel.csproj"
+              },
+              "E:\\Fuentes\\bg\\Prueba\\BE\\Utilities\\Utilities\\Utilities.csproj": {
+                "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Utilities\\Utilities\\Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.12.3, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.12.3, )"
+            },
+            "MongoDB.Driver.Core": {
+              "target": "Package",
+              "version": "[2.12.3, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Fuentes\\bg\\Prueba\\BE\\Logica\\LogicaNegocio\\LogicaNegocio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Fuentes\\bg\\Prueba\\BE\\Logica\\LogicaNegocio\\LogicaNegocio.csproj",
+        "projectName": "LogicaNegocio",
+        "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Logica\\LogicaNegocio\\LogicaNegocio.csproj",
+        "packagesPath": "C:\\Users\\alfer\\.nuget\\packages\\",
+        "outputPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Logica\\LogicaNegocio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alfer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "E:\\Fuentes\\bg\\Prueba\\BE\\Logica\\LogicaDatos\\LogicaDatos.csproj": {
+                "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Logica\\LogicaDatos\\LogicaDatos.csproj"
+              },
+              "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\ViewModel\\ViewModel.csproj": {
+                "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\ViewModel\\ViewModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Fuentes\\bg\\Prueba\\BE\\Microservicios\\ApiComun\\ApiComun.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Fuentes\\bg\\Prueba\\BE\\Microservicios\\ApiComun\\ApiComun.csproj",
+        "projectName": "ApiComun",
+        "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Microservicios\\ApiComun\\ApiComun.csproj",
+        "packagesPath": "C:\\Users\\alfer\\.nuget\\packages\\",
+        "outputPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Microservicios\\ApiComun\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alfer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\Fuentes\\bg\\Prueba\\BE\\Logica\\LogicaNegocio\\LogicaNegocio.csproj": {
+                "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Logica\\LogicaNegocio\\LogicaNegocio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "System.ServiceModel.Primitives": {
+              "target": "Package",
+              "version": "[4.8.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Fuentes\\bg\\Prueba\\BE\\Microservicios\\ApiSeguridad\\ApiSeguridad.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Fuentes\\bg\\Prueba\\BE\\Microservicios\\ApiSeguridad\\ApiSeguridad.csproj",
+        "projectName": "ApiSeguridad",
+        "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Microservicios\\ApiSeguridad\\ApiSeguridad.csproj",
+        "packagesPath": "C:\\Users\\alfer\\.nuget\\packages\\",
+        "outputPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Microservicios\\ApiSeguridad\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alfer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\Fuentes\\bg\\Prueba\\BE\\Logica\\LogicaNegocio\\LogicaNegocio.csproj": {
+                "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Logica\\LogicaNegocio\\LogicaNegocio.csproj"
+              },
+              "E:\\Fuentes\\bg\\Prueba\\BE\\Microservicios\\ApiComun\\ApiComun.csproj": {
+                "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Microservicios\\ApiComun\\ApiComun.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\Modelo\\Modelo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\Modelo\\Modelo.csproj",
+        "projectName": "Modelo",
+        "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\Modelo\\Modelo.csproj",
+        "packagesPath": "C:\\Users\\alfer\\.nuget\\packages\\",
+        "outputPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\Modelo\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alfer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "E:\\Fuentes\\bg\\Prueba\\BE\\Utilities\\Utilities\\Utilities.csproj": {
+                "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Utilities\\Utilities\\Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\ViewModel\\ViewModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\ViewModel\\ViewModel.csproj",
+        "projectName": "ViewModel",
+        "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\ViewModel\\ViewModel.csproj",
+        "packagesPath": "C:\\Users\\alfer\\.nuget\\packages\\",
+        "outputPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\ViewModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alfer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\Modelo\\Modelo.csproj": {
+                "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Modelos\\Modelo\\Modelo.csproj"
+              },
+              "E:\\Fuentes\\bg\\Prueba\\BE\\Utilities\\Utilities\\Utilities.csproj": {
+                "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Utilities\\Utilities\\Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Fuentes\\bg\\Prueba\\BE\\Utilities\\Utilities\\Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Fuentes\\bg\\Prueba\\BE\\Utilities\\Utilities\\Utilities.csproj",
+        "projectName": "Utilities",
+        "projectPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Utilities\\Utilities\\Utilities.csproj",
+        "packagesPath": "C:\\Users\\alfer\\.nuget\\packages\\",
+        "outputPath": "E:\\Fuentes\\bg\\Prueba\\BE\\Utilities\\Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alfer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
