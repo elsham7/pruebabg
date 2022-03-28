@@ -1,0 +1,149 @@
+/*DOCKER*/
+
+//**CONTENEDOR**
+//ejecutar contenedor
+docker run hello-world
+
+//ejecutar contenedor con un nombre en especifico
+docker run --name hello-sham hello-world
+
+//cambiar nombre a un contenedor en especifico y renombralo ya que docker no permite tener varios contenedores con el mismo nombre
+docker rename hello-sham hola-sham
+
+//listado de contenedores que estan corriendo
+docker ps -a
+
+//inspeccionar un contenedor en especifico
+docker inspect 05df6565dfg
+
+//eliminar contenedor uno o varios que no se estan usando
+docker rm -f hola-sham
+docker container prune
+docker rm -f $(docker ps -aq)   //foreach limpia todo los contendores
+
+//ejecutar a un contenedor de manera interactiva cuando el tipo command es bin/bash
+docker run -it 
+
+//ejecutar un contenedor y ya no en forma interactiva. Al final se coloca el comando que se requiere que se ejecute x defecto
+docker run --name alwaysup -d ubuntu tail -f /dev/null
+
+//para ingresar a un contenedor que ya existe
+docker exec -it ubunto bash
+
+// inspeccionar el pid del contenedor
+docker inspect --format '{{.State.Pid}}' ubuntu
+kill -9 idpid
+
+//detener un contenedor
+docker stop ubuntu
+
+//log de un contenedor. los ultimos 10
+docker logs --tail 10 -f proxy
+
+// ejecutar contenedor y enviar variables de entorno
+docker run -d --name app -p 3000:3000 --env MONGO_URL=mongodb://db:27017/test
+
+//**MOUNT**
+docker run -it --name db -v pathHost/pathContainer mongo
+
+// listado de volumen
+docker volume ls
+
+// crear volumen
+docker volume create dbdata
+
+// ejecutar un contenedor con un volumen
+docker run -d --name db --mount src=nombreVolumen, dst=rutaContenedor
+
+//copiar archivo o carpeta entre el host y el contenedor
+** plantilla => docker cp origen destino
+docker cp rutaHost nombreContendor:/rutaContenedor
+docker cp nombreContendor:/rutaContenedor rutaHost 
+
+//**IMAGES**
+docker pull nginx
+
+//IMAGENES A PARTIR DE DOCKERFILE
+FROM ubuntu:latest
+
+RUN touch /usr/src/hola-sham.txt
+
+// crear la imagnen
+docker build -t build ubuntu:sham .
+
+// crear el contenedor
+docker run -it ubuntu:sham
+
+// publicar imagnen e iniciar sesion primero
+docker login
+1.- Antes de publicar una imagen hay renombrar el directorio original por el nuestro
+docker tag ubuntu:sham salcivar/ubuntu:sham
+2.- publicar
+docker push salcivar/ubuntu:sham
+
+//ver las capas de una imagen de un DOCKERFILE se lo puede ver en DockerHub o por linea de comandos
+docker history ubuntu:sham
+
+//**NETWORK**
+docker network ls
+docker network create --attachable alfernet // attachable permite que se pueda agregar un contenedor
+docker netowrk inspect alfernet
+
+// conectar red y contenedor => docker network connect nombreRed nombreContenedor
+docker network connect alfernet db
+
+//**DOCKER-COMPOSE**
+version:"3.8"
+
+services:
+    app:
+        image:platziapp
+        environment:
+            MONGO_URL:""
+        depends_on:
+            - db
+        ports:
+            - "3000:3000"
+        volumes:
+            - .:/usr/src
+            - /usr/src/node_modules     //ignora este directorio y no hace el espejo.. para  no sobrescribir las librerias
+        command: nodemon index.js       //npx nodemon verifica que existe un cambio en un fuente de node
+    db:
+            imagen:"mongo"
+
+
+docker-compose up -d
+docker-compose down
+docker-compose ps
+docker-compose inspect docker-default
+docker-compose logs nombreServicio
+docker-compose logs nombreServicio -f app db //logs de varios servicios
+docker-compose exec nombreServicio bash
+docker-compose build nombreServicio // build a un servicio en especifico
+
+docker-compose.override.yml => este archivo es propio por cada desarrollador para alterar el docker-compose.yml original
+
+//***ADMINISTRACION
+
+// elimina todo..contenedores, imagenes, volumenes, network
+docker system prune
+
+//ejecutar un contenedor con limite de memoria
+docker run -d --name app --memory 1g nombreImagen
+
+//ver cuanto esta consumiendo memoria los contenedores
+docker stats
+
+//ejecutar comando ping
+CMD ["/bin/ping","-c","3","localhost"]
+
+//ejecutar comando ping y enviar parametro
+ENTRYPOINT ["/bin/ping","-c","3"]
+CMD ["localhost"]
+
+//ignorar archivos o carpetas para el build
+1.- se crea un archivo oculto llamdo .dockerignore
+2.- colocar archivos o carpetas
+    *.log
+    build/*
+    Dockerfile
